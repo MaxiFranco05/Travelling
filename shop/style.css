@@ -1,0 +1,210 @@
+  body {
+    margin: 0;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+} 
+  
+  /*NAV*/
+
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .logo-container {
+    margin-right: auto;
+}
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+    padding: 0 20px;
+  }
+
+ .container p {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  .container p::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .container p:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .container img{
+    border-radius: 50%;
+    width: 100px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+/*FIN NAV*/
+
+.destinos {
+    background-color: #333;
+    border-radius: 20px;
+    display: flex;
+    justify-items: center;
+    list-style: none;
+    justify-content: space-between;
+    margin: 5px 20px;
+    padding: 20px 40px;
+}
+
+.destinos li {
+  cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: white;
+    justify-content: center;
+    display: flex;
+  }
+
+.destinos li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .destinos li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.titulo {
+    display: flex;
+    justify-content: left;
+    margin: 50px 0;
+}
+
+
+#cabecera{
+    border-radius: 50%;
+    border: double rgb(151, 144, 144); 
+    margin-left: 30px;
+    width: 100px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; 
+    border-radius: 20px;
+    margin: 50px 0;
+}
+.card{
+    text-align: center;
+    width: 350px;
+    padding: 25px;
+    border: solid none; 
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px 0px;
+    padding-bottom: 10px;
+    transition: all ease-in-out 300ms;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img{
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto 10px auto;
+}
+.card h2, p{
+    margin: 5px 20px 10px 20px;
+    padding-bottom: 10px;
+}
+div h2, p{
+    font-family: "Quicksand", sans-serif;
+}
+main{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+footer{
+    background-color: black;
+    color: white; 
+    height: 40px;
+    padding-top: 10px;
+    margin-top: 30px;  
+    border-radius: 5px;
+}
+h1{
+    font-family: "Playfair Display", serif;
+    margin-left: 30px;
+}
+
+.compra-plato{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+button{
+    background-color: rgba(190, 190, 190, 0.664); 
+    border: none; 
+    border-radius: 30px;
+    font-family: "Josefin Sans", sans-serif;
+    height: 40px;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white; 
+}
+h1:hover{
+    transform: scale(1.1);
+}

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- metadata -->
+    <link rel="shortcut icon" href="../img/logo2.jpeg" type="image/x-icon" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <title>Fourth</title>
+    <title>Travelling</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -14,26 +16,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <header>
-        <div id="cont">
-            <img id="cabecera" src="./img/logo2.jpeg" alt="food" />
-            <h1>Travelling</h1>
-        </div>
+        <nav class="navbar">
+            <div class="container">
+            <div class="logo-container">
+              <a href="#"><img src="../img/logo2.jpeg" alt=""></a>
+            </div>
+              <ul class="nav-links">
+                <li><a href="#"><p>Home</a></p></li>
+                <li><a href="#"><p>Destinos</p></a></li>
+                <li><a href="../login/login.css"><p>Iniciar Sesion</p></a></li>
+              </ul>
+            </div>
+        </nav>
     </header>
     <main>
-        <div class="navbar">
-        <a href=""><p>Home</p></a>
-        <a href=""><p>Destinos</p></a>
-        <a href=""><p>Aerolineas</p></a>
-        <a href=""><p>Hoteles</p></a>
-        <a href=""><p>Turismo</p></a>
-        <a href=""><p>Contacto</p></a>
-        <a href="./login/login.html"><p>Iniciar sesion</p></a>
+        <div class="titulo">
+            <img id="cabecera" src="../img/logo2.jpeg" alt="logo" />
+            <h1>Travelling</h1>
         </div>
-        <div class="lord">
-<div class="platos">
+
+        <ul class="destinos">
+            <li id="america" onclick="amebtn()">AMERICA</li>
+            <li id="europa" onclick="eurobtn()">EUROPA</li>
+            <li id="todos" onclick="todosbtn()">TODOS</li>
+            <li id="asia" onclick="asiabtn()">ASIA</li>
+            <li id="oceania" onclick="oceabtn()">OCEANIA</li>
+          </ul>
+
+        <div class="card-container">
+            <div class="card oceania">
                 <img src="https://static1.squarespace.com/static/55ee34aae4b0bf70212ada4c/57d9829837c5819632bc630b/5e06e89e74877f00dbb21494/1577545446402/keith-zhu-qaNcz43MeY8-unsplash+%281%29.jpg?format=1500w" alt="Australia"/>
                 <h2>Sydney, Australia</h2>
                 <p>Sídney, capital de Nueva Gales del Sur y una de las ciudades más grandes de Australia, es famosa por su Casa de la Ópera de Sídney junto al puerto, con un característico diseño con forma de velas. El enorme Puerto Darling y el puerto Circular Quay más pequeño son núcleos de la vida ribereña, con el arqueado puente de la bahía de Sídney y el reconocido Real Jardín Botánico que se encuentra cerca. La plataforma exterior de la Sydney Tower, el Skywalk, ofrece vistas en 360 grados de la ciudad y los suburbios.</p>
@@ -42,7 +57,7 @@
                     <button>Conocer</button>
                 </div>
             </div>
-  <div class="platos">
+            <div class="card europa">
                  <img src="https://a.cdn-hotels.com/gdcs/production160/d1913/579b250e-49fe-44ed-9f9e-39d8d53a8c75.jpg?impolicy=fcrop&w=800&h=533&q=medium"
                  alt="Suecia" />
                 <h2>Estocolmo, Suecia</h2>
@@ -57,7 +72,7 @@
             </div>
 
             </div>
-            <div class="platos">
+            <div class="card asia">
                  <img src="https://lonelyplanetes.cdnstatics2.com/sites/default/files/styles/max_1300x1300/public/fotos/coreadelsur_seul_dongdaemundesignplaza_shutterstockrf_670991701_fenlioq_shutterstock.jpg?itok=J4MNT6CJ" alt="Seul , Corea del sur "/>
                  <h2>Seúl, Corea Sur </h2>
                     <p>Seúl, la animada capital de Corea del Sur, combina la rica historia de sus palacios reales y templos con la modernidad de sus rascacielos y la vibrante cultura pop. Explore la bulliciosa vida nocturna, la deliciosa gastronomía callejera y sumérjase en la experiencia única de la tecnología de vanguardia y la tradición arraigada. ¡Bienvenido a una ciudad donde el pasado y el futuro se entrelazan de manera fascinante! </p>
@@ -66,7 +81,7 @@
                     <button>Conocer</button>
             </div>
         </div>
-            <div class="platos">
+            <div class="card america">
                 <img src="https://www.yucatan.gob.mx/docs/galerias/chichen_itza/38.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh" alt="Yucatán, México"/>
                 <h2>Yucatán, México</h2>
                     <p>Yucatán, Es el estado más visitado de México ya que alberga una ciudad legendaria maya , Chichén Itzá es cuál es una de las siete maravillas del mundo moderno desde 2007, el cuál fue un centro cultural y político de la civilización maya </p>
@@ -75,7 +90,7 @@
                     <button>Conocer</button>
             </div>
         </div>
-<div class="platos">
+        <div class="card america">
                 <img src="https://mediaim.expedia.com/destination/1/6a8203b71ad6e62e6b4d6b9923a2ca59.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh" alt="Cordoba, Argentina"/>
                 <h2>Cordoba, Argentina</h2>
                     <p>Córdoba, la capital de la provincia argentina del mismo nombre, es conocida por su arquitectura colonial española. Alberga la Manzana Jesuítica, un complejo del siglo XVII con claustros activos, iglesias y el campus original de la Universidad Nacional de Córdoba, una de las universidades más antiguas de Sudamérica. El punto central de la ciudad es la Plaza San Martín y la Catedral de Córdoba de estilo neobarroco</p>
@@ -84,7 +99,7 @@
                     <button>Conocer</button>
             </div>
         </div>
-        <div class="platos">
+        <div class="card america">
             <img src="https://www.argentina.gob.ar/sites/default/files/2020/06/provincia-mendoza-jumbotron.jpg" alt="mendoza"/>
             <h2>Mendoza, Argentina</h2>
             <p>Mendoza es una ciudad de la región de Cuyo en Argentina y es el corazón de la zona vitivinícola argentina, famosa por sus Malbecs y otros vinos tintos. Sus distintas bodegas ofrecen degustaciones y visitas guiadas. La ciudad tiene calles amplias y frondosas rodeadas de edificios modernos y art déco, y con plazas más pequeñas que rodean la Plaza Independencia, sitio del Museo Municipal de Arte Moderno subterráneo, que exhibe arte moderno y contemporáneo.</p>
@@ -92,7 +107,7 @@
                 <p><strong>$40000</strong></p>
                 <button>Conocer</button>
             </div>
-          </div>
+        </div>
     </main>
     <footer>
         <p>Travelling®</p>
