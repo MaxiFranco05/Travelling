@@ -22,10 +22,10 @@ function precioMex(){
     document.getElementById('res-mex').innerHTML = resultMex;
 }
 
-function precioMex(){
-    var cor = document.getElementById("cor").value;
-    var resultCor = (cor * 40000);
-    document.getElementById('res-cor').innerHTML = resultCor;
+function precioCord(){
+    var cord = document.getElementById("cord").value;
+    var resultCord = (cord * 40000);
+    document.getElementById('res-cord').innerHTML = resultCord;
 }
 
 function precioMen(){

@@ -1,18 +1,22 @@
-  body {
-    margin: 0;
-    background-color: #5a5959;
-  }
+body{
+  margin: 0;
+  background-color: #5a5959;
+  background-image: url(../img/bg-shop.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
 
-  a {
-    color: white;
-    text-decoration: none;
+a{
+  color: white;
+  text-decoration: none;
 } 
   
   /*NAV*/
 
   .navbar {
-    background-color: #333;
-    color: #fff;
+    color: #ffffff;
+    background-color: rgba(24, 24, 24, 0.5);
     padding: 10px 0;
     border-end-end-radius: 20px;
     border-end-start-radius: 20px;
@@ -21,6 +25,8 @@
 
   .logo-container {
     margin-right: auto;
+    display: flex;
+    align-items: center;
 }
   
   .container {
@@ -81,10 +87,66 @@
     font-size: 16px;
   }
 
+  
+#cartlogo {
+    border-radius: 0px;
+    width: 30px;
+  }
 /*FIN NAV*/
 
+.promociones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  height: 400px;
+  justify-content: center;
+  margin: 30px 250px;
+}
+
+.mdz {
+  background: url(https://www.argentina.gob.ar/sites/default/files/2020/06/provincia-mendoza-jumbotron.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+  border-radius: 20px;
+}
+
+.yuca {
+  background: url(https://www.yucatan.gob.mx/docs/galerias/chichen_itza/38.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.cor {
+  background: url(https://mediaim.expedia.com/destination/1/6a8203b71ad6e62e6b4d6b9923a2ca59.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+
+.promo-titulo {
+  font-family: monospace;
+  font-size: 25px;
+  margin: 10px 20px;
+  color: #000000;
+}
+
+.promo-titulo-yuca {
+  font-family: monospace;
+  font-size: 25px;
+  margin: 10px 20px;
+  color: #fff;
+}
+
+
 .destinos {
-    background-color: #333;
+    background-color: #181818;
     border-radius: 20px;
     display: flex;
     justify-items: center;
@@ -92,7 +154,11 @@
     justify-content: space-between;
     margin: 5px 20px;
     padding: 20px 40px;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-size: 12px;
 }
+
+/* AÑADÍ LA TIPOGRAFÍA Wix Madefor Display PARA LA NAVBAR DE "DESTINOS" */
 
 .destinos li {
   cursor: pointer;
@@ -101,6 +167,8 @@
     color: white;
     justify-content: center;
     display: flex;
+    margin: 5px 20px;
+    flex-wrap: wrap;
   }
 
 .destinos li::after {
@@ -142,11 +210,23 @@
     gap: 50px; 
     border-radius: 20px;
     margin: 50px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0px;
+
+    P{
+      text-align: justify;
+    }
+
+    /* CAMBIÉ LA ALINEACIÓN DEL TEXTO PARA MEJORAR EL DISEÑO */
 }
 .card{
-    background-color: #bababa;
+    background-color: #3f3f3f;
     text-align: center;
-    width: 350px;
+    width: 325px;
+    height: 575px;
     padding: 25px;
     border: solid none; 
     border-radius: 10px;
@@ -172,11 +252,13 @@
 }
 div h2, p{
     font-family: "Quicksand", sans-serif;
+    color: #ffffff;
 }
+
 main{
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px 0;
 }
+
 footer{
     background-color: black;
     color: white; 
@@ -196,15 +278,16 @@ h1{
     justify-content: center;
 }
 button{
-    background-color: rgba(190, 190, 190, 0.664); 
-    border: none; 
+    background-color: #06141b; 
+    border: solid black .5px; 
     border-radius: 30px;
     font-family: "Josefin Sans", sans-serif;
+    color: white;
     height: 40px;
 }
 button:hover{
     transform: scale(1.1);
-    background-color: black;
+    background-color: #11212D;
     color: white; 
 }
 h1:hover{
