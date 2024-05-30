@@ -139,8 +139,8 @@ main {
   gap: 20px;
   margin: 20px;
   justify-content: center;
-  justify-items: center;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -154,23 +154,48 @@ main {
   margin-bottom: 10px;
   color: #ffffff;
   background-color: #4A5C6C;
-
-  h4 {
-    color: #ffffff;
-    font-size: 20px;
-    text-decoration: underline 0.9px;
-  }
+  text-align: start;
+  width: 100%;
+  box-sizing: border-box; 
 }
 
 .info img {
   width: 200px;
-  border: solid black .5px;
+  border: solid black 0.5px;
   border-radius: 50%;
   margin: 5px 10px;
 }
 
+.info-text {
+  display: flex;
+  flex-direction: column;
+  text-wrap: wrap;
+  flex: 1; 
+}
+
 .reverse {
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: row; 
   text-align: end;
+}
+
+
+@media (max-width: 768px) {
+  .info {
+    flex-direction: column-reverse; 
+    text-align: center; 
+  }
+  
+  .reverse {
+    flex-direction: column; 
+    text-align: center; 
+  }
+  
+  .info img {
+    width: 150px; 
+    margin: 10px auto; 
+  }
+  
+  .info-text {
+    text-align: center; 
+  }
 }

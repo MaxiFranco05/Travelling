@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0;
   background-color: #5a5959;
@@ -228,7 +232,7 @@ a{
     width: 325px;
     height: 575px;
     padding: 25px;
-    border: solid none; 
+    border: solid black 1px; 
     border-radius: 10px;
     box-shadow: 0px 1px 5px 0px;
     padding-bottom: 10px;
@@ -237,6 +241,9 @@ a{
 
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 27px 24px 46px 8px rgba(0,0,0,0.8);
+-webkit-box-shadow: 27px 24px 46px 8px rgba(0,0,0,0.8);
+-moz-box-shadow: 27px 24px 46px 8px rgba(0,0,0,0.8);
 }
 
 .card img{
@@ -292,4 +299,44 @@ button:hover{
 }
 h1:hover{
     transform: scale(1.1);
+}
+
+
+/*DESDE AQUÍ MODIFIQUÉ*/
+.paquete {
+  width: 75%;
+  background-color: #3f3f3f;
+  text-align: center;
+  border: solid none; 
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 0px;
+  padding: 10px 15px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  font-family: "Quicksand", sans-serif;
+  gap: 25px;
+  margin: auto;
+}
+.paquete img {
+  width: 80%;
+  border-radius: 10px;
+  align-items: center;
+  position: static;
+}
+
+#turistico {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.pack-text {
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
