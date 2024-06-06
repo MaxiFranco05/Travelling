@@ -267,14 +267,6 @@ main{
     margin: 20px 0;
 }
 
-footer{
-    background-color: black;
-    color: white; 
-    height: 40px;
-    padding-top: 10px;
-    margin-top: 30px;  
-    border-radius: 5px;
-}
 
 h1{
     font-family: monospace;
@@ -516,7 +508,6 @@ footer{
 
     .footer-minor{
       display: flex;
-      
     }
 
     .fa-phone, .fa-location-dot, .fa-envelope, .fa-facebook, .fa-square-instagram{
@@ -532,4 +523,14 @@ footer{
     padding-top: 10px;
     text-align: center;
   }
+}
+
+.sitios-footer p:hover{
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+.red:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
 }
