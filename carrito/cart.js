@@ -1,36 +1,36 @@
 function precioAus(){
     var sid = document.getElementById("sid").value;
-    var resultAus = (sid * 40000);
+    var resultAus = (sid * 2500);
     document.getElementById('res-aus').innerHTML = resultAus;
 }
 
 function precioSue(){
     var sue = document.getElementById("sue").value;
-    var resultSue = (sue * 40000);
+    var resultSue = (sue * 2000);
     document.getElementById('res-sue').innerHTML = resultSue;
 }
 
 function precioCor(){
     var cor = document.getElementById("cor").value;
-    var resultCor = (cor * 40000);
+    var resultCor = (cor * 2800);
     document.getElementById('res-cor').innerHTML = resultCor;
 }
 
 function precioMex(){
     var mex = document.getElementById("mex").value;
-    var resultMex = (mex * 40000);
+    var resultMex = (mex * 2000);
     document.getElementById('res-mex').innerHTML = resultMex;
 }
 
 function precioCord(){
     var cord = document.getElementById("cord").value;
-    var resultCord = (cord * 40000);
+    var resultCord = (cord * 1200);
     document.getElementById('res-cord').innerHTML = resultCord;
 }
 
 function precioMen(){
     var men = document.getElementById("men").value;
-    var resultMen = (men * 40000);
+    var resultMen = (men * 1800);
     document.getElementById('res-men').innerHTML = resultMen;
 }
 

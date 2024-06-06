@@ -38,25 +38,27 @@
     </header>
     <main>
         <div class="promociones">
-            <div class="mdz">
-                <span class="promo-titulo">Mendoza, Argentina</span>
-            </div>
-            <div class="yuca">
-                <span class="promo-titulo-yuca">Yucatán, México</span>
-            </div>
-            <div class="cor">
-                <span class="promo-titulo">Cordoba, Mendoza</span>
-            </div>
+            <a class="promo" href="#pack-sue"><div class="promo"></div></a>
+            <a class="lugar-mex" href="#pack-mex"><div class="lugar-mex lugares"></div></a>
+            <a class="lugar-cord" href="#pack-cord"><div class="lugar-cord lugares"></div></a>
         </div>
 
-        <div>
-        <ul class="destinos">
-            <li id="america" onclick="amebtn()">AMERICA</li>
-            <li id="europa" onclick="eurobtn()">EUROPA</li>
-            <li id="todos" onclick="todosbtn()">TODOS</li>
-            <li id="asia" onclick="asiabtn()">ASIA</li>
-            <li id="oceania" onclick="oceabtn()">OCEANIA</li>
-          </ul>
+        <div class="destinos">
+            <div>
+            <p id="america" onclick="amebtn()">AMERICA</p>
+            </div>
+            <div>
+            <p id="europa" onclick="eurobtn()">EUROPA</p>
+            </div>
+            <div>
+            <p id="todos" onclick="todosbtn()">TODOS</p>
+            </div>
+            <div>
+            <p id="asia" onclick="asiabtn()">ASIA</p>
+            </div>
+            <div>
+            <p id="oceania" onclick="oceabtn()">OCEANIA</p>
+            </div>
         </div>
 
 
@@ -64,21 +66,21 @@
             <a href="#pack-aus">
             <div class="card oceania">
                 <img src="https://static1.squarespace.com/static/55ee34aae4b0bf70212ada4c/57d9829837c5819632bc630b/5e06e89e74877f00dbb21494/1577545446402/keith-zhu-qaNcz43MeY8-unsplash+%281%29.jpg?format=1500w" alt="Australia"/>
-                <h2>Sydney, Australia</h2>
+                <h2>Sidney, Australia</h2>
                 <p>Sídney, capital de Nueva Gales del Sur, es famosa por su icónica Casa de la Ópera y su puerto. Destacan el Puerto Darling, el Circular Quay, el puente de la bahía y el Real Jardín Botánico. La Sydney Tower ofrece vistas panorámicas de la ciudad y los suburbios.</p>
                 <div class="compra-plato">
-                    <p><strong>$40000</strong></p>
+                    <p><strong>$2,500</strong></p>
                     <button>Conocer</button>
                 </div>
             </div></a>
             <a href="#pack-sue">
-            <div class="card europa">
+            <div id="card-suecia" class="card europa">
                  <img src="https://a.cdn-hotels.com/gdcs/production160/d1913/579b250e-49fe-44ed-9f9e-39d8d53a8c75.jpg?impolicy=fcrop&w=800&h=533&q=medium"
                  alt="Suecia" />
                 <h2>Estocolmo, Suecia</h2>
                 <p>Suecia, una nación escandinava con numerosas islas costeras y lagos, posee extensos bosques y montañas nevadas. Sus principales ciudades, Estocolmo, Malmö y Gotemburgo, son costeras. Estocolmo, construida sobre 14 islas, cuenta con más de 50 puentes, palacios y museos.</p>
             <div class="compra-plato">
-                <p><strong>$45000</strong></p>
+                <p><strong><span style="text-decoration: line-through red 2px;">$2,300</span> <span style="text-decoration: underline 2px green; color: green;">$2,000</span></strong></p>
                 <button>Conocer</button>
             </div>
             </div></a>
@@ -88,7 +90,7 @@
                 <h2>Seúl, Corea del Sur </h2>
                 <p>Seúl, capital de Corea del Sur, mezcla historia y modernidad con palacios, templos, rascacielos y cultura pop. Disfrute de la vibrante vida nocturna, la gastronomía callejera y la avanzada tecnología. Es una ciudad donde el pasado y el futuro se entrelazan fascinantemente.</p>
             <div class="compra-plato">
-                    <p><strong>$55000</strong></p>
+                    <p><strong>$2,800</strong></p>
                     <button>Conocer</button>
             </div>
         </div></a>
@@ -98,7 +100,7 @@
                 <h2>Yucatán, México</h2>
                 <p>Yucatán, Es el estado más visitado de México ya que alberga una ciudad legendaria maya , Chichén Itzá es cuál es una de las siete maravillas del mundo moderno desde 2007, el cuál fue un centro cultural y político de la civilización maya </p>
             <div class="compra-plato">
-                    <p><strong>$65000</strong></p>
+                    <p><strong>$2,000</strong></p>
                     <button>Conocer</button>
             </div>
         </div></a>
@@ -108,7 +110,7 @@
                 <h2>Cordoba, Argentina</h2>
                 <p>Córdoba, capital de la provincia argentina homónima, destaca por su arquitectura colonial española. Alberga la Manzana Jesuítica del siglo XVII y la Universidad Nacional de Córdoba. El centro de la ciudad es la Plaza San Martín, junto a la Catedral de Córdoba de estilo neobarroco.</p>
             <div class="compra-plato">
-                    <p><strong>$45000</strong></p>
+                    <p><strong>$1,200</strong></p>
                     <button>Conocer</button>
             </div>
         </div></a>
@@ -118,7 +120,7 @@
             <h2>Mendoza, Argentina</h2>
             <p>Mendoza, en la región de Cuyo, es el corazón vitivinícola de Argentina, famosa por sus Malbecs. Sus bodegas ofrecen degustaciones y visitas guiadas. La ciudad tiene calles amplias, edificios modernos y art déco, y la Plaza Independencia, donde se encuentra el Museo Municipal de Arte Moderno.</p>
             <div class="compra-plato">
-                <p><strong>$40000</strong></p>
+                <p><strong>$1,800</strong></p>
                 <button>Conocer</button>
             </div>
         </div></a>
@@ -127,18 +129,6 @@
         <!-- DESDE AQUÍ MODIFIQUÉ -->
         <h2 id="turistico">Paquetes Turísticos</h2>
         <div class="contenedor-pack">
-            <!-- <div  class="paquete">
-                <div class="pack-text">
-                <h3>Sydney, Australia</h3>
-                <ul>
-                    <li>Duración del viaje: 7 días y 6 noches</li>
-                    <li>Precio por persona: $2,500</li>
-                    <li>Incluye: Vuelo redondo, alojamiento en un hotel de 4 estrellas, tour por la Ópera de Sídney, visita a las playas de Bondi y Manly, y excursión al Parque Nacional Blue Mountains.</li>
-                </ul>
-                </div>
-                <div>
-                <img src="https://viajeaustralia.com/wp-content/uploads/2020/04/Playa-Bondi-Beach-1024x576.jpg" alt="sydney">
-            </div> -->
 
 
             <div id="pack-aus" class="paquete">
@@ -150,68 +140,17 @@
                 </div>
                 <img src="https://viajeaustralia.com/wp-content/uploads/2020/04/Playa-Bondi-Beach-1024x576.jpg" alt="Sidney">
             </div>
-            <br>
 
 
-            <!-- <div id="pack-men" class="paquete">
+            <div id="pack-sue" class="paquete">
                 <div class="pack-text">
-                <h3>Mendoza, Argentina</h3>
-                <ul>
-                    <li>Duración del viaje: 5 días y 4 noches</li>
-                    <li>Precio por persona: $1,800</li>
-                    <li>Incluye: Vuelo redondo, alojamiento en una bodega boutique, visita a diferentes bodegas con degustación de vinos, recorrido por los viñedos en bicicleta, y excursión al Cerro de la Gloria.</li>
-                </ul>
+                    <h4>Estocolmo, Suecia</h4>
+                    <p>Duración del viaje: 4 días y 3 noches</p>
+                    <p>Precio por persona: <span style="text-decoration: line-through red 2px;">$2,300</span> <span style="text-decoration: underline 2px green; color: green;">$2,000</span></p>
+                    <p>Incluye: Vuelo redondo, alojamiento en un hotel céntrico, visita al Palacio Real, paseo en barco por los canales de Estocolmo, recorrido por el casco antiguo (Gamla Stan), y entrada al Museo Vasa.</p>
                 </div>
-                <img src="https://www.welcomeargentina.com/paseos/cerro_de_la_gloria/cerro-gloria-1.jpg" alt="mendoza">
-            </div> -->
-
-
-            <div id="pack-men" class="paquete">
-                <div class="pack-text">
-                    <h4>Mendoza, Argentina</h4>
-                    <p>Duración del viaje: 5 días y 4 noches</p>
-                    <p>Precio por persona: $1,800</p>
-                    <p>Incluye: Vuelo redondo, alojamiento en una bodega boutique, visita a diferentes bodegas con degustación de vinos, recorrido por los viñedos en bicicleta, y excursión al Cerro de la Gloria.</p>
-                </div>
-                <img src="https://www.welcomeargentina.com/paseos/cerro_de_la_gloria/cerro-gloria-1.jpg" alt="Mendoza">
+                <img src="https://www.thewondertrip.com/data/posts/69/images/original/estocolmo%202.jpg" alt="Estocolmo">
             </div>
-            <br>
-
-            
-            <!-- <div id="pack-sue" class="paquete">
-                <div class="pack-text">
-                <h3>Estocolmo, Suecia</h3>
-                <ul>
-                    <li>Duración del viaje: 4 días y 3 noches</li>
-                    <li>Precio por persona: $2,300</li>
-                    <li>Incluye: Vuelo redondo, alojamiento en un hotel céntrico, visita al Palacio Real, paseo en barco por los canales de Estocolmo, recorrido por el casco antiguo (Gamla Stan), y entrada al Museo Vasa.</li>
-                </ul>
-                </div>
-                <img src="https://www.thewondertrip.com/data/posts/69/images/original/estocolmo%202.jpg" alt="estocolmo"> -->
-
-
-                <div id="pack-sue" class="paquete">
-                    <div class="pack-text">
-                        <h4>Estocolmo, Suecia</h4>
-                        <p>Duración del viaje: 4 días y 3 noches</p>
-                        <p>Precio por persona: $2,300</p>
-                        <p>Incluye: Vuelo redondo, alojamiento en un hotel céntrico, visita al Palacio Real, paseo en barco por los canales de Estocolmo, recorrido por el casco antiguo (Gamla Stan), y entrada al Museo Vasa.</p>
-                    </div>
-                    <img src="https://www.thewondertrip.com/data/posts/69/images/original/estocolmo%202.jpg" alt="Estocolmo">
-                </div>
-                <br>
-
-
-            <!-- <div id="pack-cor" class="paquete">
-                <div class="pack-text">
-                <h3>Seúl, Corea del Sur</h3>
-                <ul>
-                    <li>Duración del viaje: 6 días y 5 noches</li>
-                    <li>Precio por persona: $2,800</li>
-                    <li>Incluye: Vuelo redondo, alojamiento en un hotel de lujo, visita a los palacios Gyeongbokgung y Changdeokgung, recorrido por el barrio de Myeongdong, espectáculo de música tradicional coreana, y excursión al Templo de Jogyesa.</li>
-                </ul>
-                </div>
-                <img src="https://spanish.korea.net/upload/fileShare/2023/09/usr_1695719670554.jpg" alt="seúl"> -->
 
 
                 <div id="pack-cor" class="paquete">
@@ -223,23 +162,6 @@
                     </div>
                     <img src="https://spanish.korea.net/upload/fileShare/2023/09/usr_1695719670554.jpg" alt="Seul">
                 </div>
-                <br>
-
-
-
-
-            <!-- </div>
-            <div id="pack-mex" class="paquete">
-                <div class="pack-text">
-                <h3>Yucatán, México</h3>
-                <ul>
-                    <li>Duración del viaje: 8 días y 7 noches</li>
-                    <li>Precio por persona: $2,000</li>
-                    <li>Incluye: Vuelo redondo, alojamiento en un resort todo incluido, visita a las ruinas de Chichén Itzá, recorrido por la ciudad de Mérida, nadar en un cenote, y excursión a la reserva de la biosfera de Sian Ka'an.</li>
-                </ul>
-                </div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/2560px-Chichen_Itza_3.jpg" alt="yucatán"> -->
-
 
 
                 <div id="pack-mex" class="paquete">
@@ -251,22 +173,6 @@
                     </div>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/2560px-Chichen_Itza_3.jpg" alt="Yucatán">
                 </div>
-                <br>
-
-
-
-            <!-- </div>
-            <div id="pack-cord" class="paquete">
-                <div class="pack-text">
-                <h3>Córdoba, Argentina</h3>
-                <ul>
-                    <li>Duración del viaje: 3 días y 2 noches</li>
-                    <li>Precio por persona: $1,200</li>
-                    <li>Incluye: Vuelo redondo, alojamiento en un hotel boutique, visita a la Manzana Jesuítica, recorrido por los barrios Nueva Córdoba y Güemes, y excursión a la Estancia Jesuítica de Alta Gracia.</li>
-                </ul>
-                </div>
-                <img src="https://turismo.cordoba.gob.ar/wp-content/uploads/2021/10/Colegio-Monserrat-1.jpg" alt="cordoba"> -->
-
 
 
                 <div id="pack-cord" class="paquete">
@@ -278,59 +184,22 @@
                     </div>
                     <img src="https://turismo.cordoba.gob.ar/wp-content/uploads/2021/10/Colegio-Monserrat-1.jpg" alt="Cordoba">
                 </div>
-                <br>
 
+
+                <div id="pack-men" class="paquete">
+                    <div class="pack-text">
+                        <h4>Mendoza, Argentina</h4>
+                        <p>Duración del viaje: 5 días y 4 noches</p>
+                        <p>Precio por persona: $1,800</p>
+                        <p>Incluye: Vuelo redondo, alojamiento en una bodega boutique, visita a diferentes bodegas con degustación de vinos, recorrido por los viñedos en bicicleta, y excursión al Cerro de la Gloria.</p>
+                    </div>
+                    <img src="https://www.welcomeargentina.com/paseos/cerro_de_la_gloria/cerro-gloria-1.jpg" alt="Mendoza">
+                </div>
 
 
             </div>
         </div>
     </main>
-
-    <!-- <footer class="footer">
-        <div class="container-footer">
-          <div class="footer-section">
-            <div class="logo-footer">
-              <a href="../index.html">
-                <img src="../img/logo2.jpeg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="footer-section">
-            <h3 class="section-title">Contacto</h3>
-            <div class="contact-info">
-              <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span>Calle Falsa 123, Springfield, USA</span>
-              </div>
-              <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                </svg>
-                <span>+54 (777) 777-7777</span>
-              </div>
-              <div class="contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-small">
-                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                </svg>
-                <span>contacto@travelling.com</span>
-              </div>
-            </div>
-          </div>
-          <div class="footer-section">
-            <h3 class="section-title">Sitios</h3>
-            <div class="links-footer">
-              <a class="link-item" href="../index.html">Home</a>
-              <a class="link-item" href="./shop/shop.html">Destinos</a>
-              <a class="link-item" href="../carrito/carrito.html">Carrito</a>
-              <a class="link-item" href="../login/login.html">Inicio Sesion</a>
-            </div>
-          </div>
-        </div>
-      </footer> -->
 
       <footer>
         <div class="footer-major">
@@ -345,12 +214,12 @@
                 
                 <div class="footer-minor">
                 <i class="fa-solid fa-location-dot fa-xl"></i>
-                <p>Calle Velgrano 123 Córdoba, Argentina</p><br>
+                <p>Calle Belgrano 123 Córdoba, Argentina</p><br>
                 </div>
     
                 <div class="footer-minor">
                 <i class="fa-solid fa-envelope fa-xl"></i>  
-                <p>travellingoficial@gmail.com</p> <br> 
+                <p>contacto@travelling.com</p> <br> 
                 </div>
             </div>
     <!-- //////// -->
@@ -360,7 +229,7 @@
     
                 <div class="footer-minor">
                 <i class="fa-brands fa-square-instagram fa-xl"></i>
-                <a href="https://www.instagram.com/travel?igsh=ZHRoZTFwajk5ZWEz"><p class="red">@travel</p></a>
+                <a href="https://www.instagram.com/travel?igsh=ZHRoZTFwajk5ZWEz"><p class="red">@Travelling</p></a>
                 </div>
     
                 <div class="footer-minor">

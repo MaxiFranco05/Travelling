@@ -10,19 +10,24 @@
     <header>
         <nav class="navbar">
             <div class="container">
-            <div class="logo-container">
-              <a href="../index.html"><img src="../img/logo2.jpeg" alt=""></a>
-            </div>
+                <div class="logo-container">
+                    <a href="../index.html"><img src="../img/logo2.jpeg" alt=""></a> 
+                    <!-- <a href="../index.html"> <div><h1>Travelling</h1></div> </a> -->
+                    <!-- Anadí este div con el nombre de la pagina -->
+                </div>
+            
+                <!-- Eliminé el logo repetido de está parte  -->
+
               <ul class="nav-links">
-                <li><a href="../carrito/carrito.html"><p><img id="cartlogo" src="../img/cart-logo.png" alt=""></p></a></li>
+                <li><a href="./carrito/carrito.html"><p><img id="cartlogo" src="../img/cart-logo.png" alt=""></p></a></li>
                 <li><a href="../index.html"><p>Home</p></a></li>
-                <li><a href="../shop/shop.html"><p>Destinos</p></a></li>
+                <li><a href="../shop.html"><p>Destinos</p></a></li>
                 <li><a href="../login/login.html"><p>Iniciar Sesion</p></a></li>
               </ul>
             </div>
         </nav>
     </header>
-    <label for="">Carrito:</label>
+    <label for="" style="color: #fff;">Carrito:</label>
     <div class="shop">
         <div class="compra sidney">
             <ul>
@@ -63,7 +68,7 @@
         <div class="compra cordoba">
             <ul>
                 <li>Cordoba, Argentina</li>
-                <li><input type="number" name="Pasaje" id="cor" min="0"></li>
+                <li><input type="number" name="Pasaje" id="cord" min="0"></li>
                 <input type="button" value="Calcular" onclick="precioCord()"/>
                 <li>Total:$</li>
                 <li id="res-cord">0</li>

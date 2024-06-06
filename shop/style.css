@@ -105,10 +105,10 @@ a{
   gap: 16px;
   height: 400px;
   justify-content: center;
-  margin: 30px 250px;
+  margin: 30px 50px;
 }
 
-.mdz {
+.promo {
   background: url(../img/promo.png);
   background-position: center;
   background-size: cover;
@@ -118,7 +118,7 @@ a{
   border-radius: 20px;
 }
 
-.yuca {
+.lugar-mex {
   background: url(https://www.yucatan.gob.mx/docs/galerias/chichen_itza/38.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh);
   background-size: cover;
   background-position: center;
@@ -126,7 +126,7 @@ a{
   border-radius: 20px;
 }
 
-.cor {
+.lugar-cord {
   background: url(https://mediaim.expedia.com/destination/1/6a8203b71ad6e62e6b4d6b9923a2ca59.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh);
   background-size: cover;
   background-position: center;
@@ -142,7 +142,7 @@ a{
   color: #000000;
 }
 
-.promo-titulo-yuca {
+.promo-titulo.yuca {
   font-family: monospace;
   font-size: 25px;
   margin: 10px 20px;
@@ -164,8 +164,13 @@ a{
 }
 
 /* AÑADÍ LA TIPOGRAFÍA Wix Madefor Display PARA LA NAVBAR DE "DESTINOS" */
+.destinos{
+  display: flex;
+  flex-flow: wrap row;
+  gap: 20px;
+}
 
-.destinos li {
+.destinos p {
   cursor: pointer;
     display: inline-block;
     position: relative;
@@ -176,7 +181,7 @@ a{
     flex-wrap: wrap;
   }
 
-.destinos li::after {
+.destinos p::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -189,7 +194,7 @@ a{
     transition: transform 0.25s ease-out;
   }
   
-  .destinos li:hover::after {
+  .destinos p:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
@@ -221,7 +226,7 @@ a{
     margin-right: auto;
     padding: 50px 0px;
 
-    P{
+    p{
       text-align: justify;
     }
 
@@ -295,32 +300,45 @@ h1:hover{
     transform: scale(1.1);
 }
 
+@media (max-width: 1200px) {
+  .card {
+      max-width: 290px;
+      margin: 20px 20px;
+  }
+  .card-container{
+    width: 1200px;
+  }
+}
 
-/*DESDE AQUÍ MODIFIQUÉ*/
-/* .paquete {
-  width: 75%;
-  background-color: #3f3f3f;
-  text-align: center;
-  border: solid none; 
-  border-radius: 10px;
-  box-shadow: 0px 1px 5px 0px;
-  padding: 10px 15px;
-  display: flex;
-  flex-flow: wrap row;
-  /* grid-template-columns: 2fr 1fr; 
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-  font-family: "Quicksand", sans-serif;
-  gap: 25px;
-  margin: auto;
-} */
-/* .paquete img {
-  width: 100px;
-  border-radius: 10px;
-  align-items: center;
-  position: static;
-} */
+@media (max-width: 1000px) {
+  .card {
+      max-width: 280px;
+      margin: 20px 20px;
+  }
+  .card-container{
+    width: 1000px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+      max-width: 280px;
+      margin: 20px 20px;
+  }
+  .card-container{
+    width: 600px;
+  }
+}
+
+#card-suecia{
+  background-color: #5a5959;
+  border: dashed red 2px;
+}
+
+#pack-sue {
+  background-color: #5a5959;
+  border: dashed red 2px;
+}
 
 #turistico {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -358,6 +376,7 @@ a {
   text-align: start;
   width: 100%;
   box-sizing: border-box; 
+  margin: 20px 100px;
 }
 
 .paquete img {
@@ -391,97 +410,6 @@ a {
   }
 }
 
-
-
-
-/* .footer {
-  background-color: #1f1f1f;
-  padding: 20px 0px;
-  width: 100%;
-  color: #4b5563;
-  
-}
-
-.container-footer {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-@media (min-width: 640px) {
-  .container-footer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 768px) {
-  .container-footer {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.footer-section {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.logo-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo-footer img {
-  border-radius: 50%;
-  width: 200px;
-}
-
-.logo-icon {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-.icon-small {
-  height: 1rem;
-  width: 1rem;
-  color: #9ca3af;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  color: #fff;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.links-footer {
-  display: grid;
-  gap: 0.25rem;
-}
-
-.section-title {
-  font-weight: 600;
-}
-
-.link-item {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.link-item:hover {
-  text-decoration: underline;
-  transform: scale(1.1);
-} */
 
 footer{
   background-color: black;
@@ -523,7 +451,9 @@ footer{
     padding-top: 10px;
     text-align: center;
   }
+
 }
+
 
 .sitios-footer p:hover{
   text-decoration: underline;

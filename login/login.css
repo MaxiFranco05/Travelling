@@ -1,30 +1,17 @@
 html {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo{
-    display: block;
-    color: white;
-    text-align: center;
-    margin: 5px 10px 20px 10px; 
-    padding: 10px;
-    font-size: 20px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-body{
-    background-image: url(../img/bg-login.jpeg);
-    background-size: cover;
-    margin: 0;
+body {
+  background-image: url(../img/bg-login.jpeg);
+  background-size: cover;
+  margin: 0;
 }
 
-/*INICIO DE NAV*/
+
 .navbar {
-  background-color: rgba(51, 51, 51, 0.1);
-  /* backdrop-filter: blur(5px); */
-  color: #fff;
+  color: #ffffff;
+  /* background-color: rgba(24, 24, 24, 0.5); */
   padding: 10px 0;
   border-end-end-radius: 20px;
   border-end-start-radius: 20px;
@@ -33,6 +20,8 @@ body{
 
 .logo-container {
   margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 
 .container {
@@ -92,67 +81,110 @@ body{
   text-decoration: none;
   font-size: 16px;
 }
-/*FIN DE NAV*/
 
-main {
-    display: flex;
+
+#cartlogo {
+  border-radius: 0px;
+  width: 30px;
 }
 
-form{
-    background-color: rgba(56, 62, 81, 0.8);
-    color: #fff;
-    text-align: center;
-    padding: 20px; 
-    margin: 60px auto auto auto; 
-    border-radius: 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px 100px 75px;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.753);
+/* FIN NAV */
+
+
+.contenedor-card {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.avatar {
+  margin-bottom: 20px;
+}
+
+.avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 
 h2 {
-   color: #000;
-   margin-bottom: 40px;
+  margin: 10px 0;
 }
 
-label{
-    margin-bottom: 10px; 
-    margin-top: 10px; 
+p {
+  margin: 10px 0 20px;
+  color: #888;
 }
 
-input{
-    margin-top: 10px; 
-    margin-bottom: 10px; 
-    padding: 10px 15px 10px 15px; 
-    border-radius: 30px; 
-    border: solid 1px gray;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.553);
-}
-img{
-    width: 200px;
-    border-radius: 50%;
-    border: double white; 
-    text-align: center;
-    box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.753);
-    margin-top: 30px;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
-.buttons {
-    display: flex;
+label {
+  text-align: left;
+  margin-bottom: 5px;
+  color: #333;
 }
 
-buttom{
-    background-color: white;
-    color: gray; 
-    border-radius: 25px;
-    margin: 20px;
-    padding: 5px 20px 5px 20px;
-    border: solid 1px;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.53);
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
-buttom:hover {
-    background-color: rgb(137, 186, 255);
-    color: rgb(255, 255, 255);
-    transform: scale(1.15);
+.password-container {
+  position: relative;
+}
+
+.password-container input[type="password"] {
+  width: calc(100% - 40px);
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #353535;
+  transform: scale(.99);
 }
