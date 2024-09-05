@@ -1,6 +1,6 @@
-const $submit = document.getElementById("submit"),
-    $password = document.getElementById("password"),
-    $username = document.getElementById("username"),
+const $submit = document.getElementById("submit");
+    $password = document.getElementById("password");
+    $username = document.getElementById("username");
     $visible = document.getElementById("visible");
 
 document.addEventListener("change", (e) => {
